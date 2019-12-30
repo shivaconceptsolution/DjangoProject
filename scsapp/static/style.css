@@ -1,0 +1,48 @@
+
+*
+{margin: 0px;}
+header
+{
+	height: 100px;
+	background-color: black;
+	color: white;
+}
+header ul li
+{
+	margin-top: 20px;
+	display: inline-block;
+	margin-left: 10px;
+
+}
+header ul li a
+{
+	color: white;
+	text-decoration: none;
+}
+footer ul li {
+	
+	display: inline-block;
+	margin-left: 10px;
+
+}
+section
+{
+	height: 400px;
+	background-color: gray;
+	color: white;
+}
+footer
+{
+	height: 200px;
+	background-color: black;
+	color: white;
+}
+.part{
+
+	width:30%;
+	height: 80%;
+	float:left;
+	margin-top: 10px;
+	margin-left: 20px;
+	border: 1px solid white;	
+}

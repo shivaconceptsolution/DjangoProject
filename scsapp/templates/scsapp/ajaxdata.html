@@ -1,0 +1,7 @@
+<table border="1">
+	<tr><th>EmailID</th><th>Password</th><th>Fullname</th></tr>
+ {% for q in res %}
+     <tr>  <td>{{ q.emailid }} </td><td> {{ q.password }} </td><td> {{ q.fullname }}</td></tr>
+ {% endfor %}
+
+</table>

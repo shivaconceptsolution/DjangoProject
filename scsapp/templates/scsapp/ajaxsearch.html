@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script type="text/javascript">
+    	function showdata(a)
+    	{
+             xmlhttp = new XMLHttpRequest();
+             xmlhttp.onreadystatechange=function()
+             {
+              document.getElementById("res").innerHTML=xmlhttp.responseText;  
+
+             }
+             xmlhttp.open("get","ajaxdata?q="+a,true);
+             xmlhttp.send();
+
+
+    	}
+
+    </script>
+</head>
+<body>
+   Type and char to search user's<br>	
+   <input type="text" id="txtseaarch" onkeyup="showdata(this.value)">
+   <div id="res"></div>
+</body>
+</html>

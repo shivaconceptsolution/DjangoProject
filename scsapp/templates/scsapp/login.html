@@ -1,0 +1,13 @@
+<form action="logincode" method="post">
+			{% csrf_token %}
+			<input type="email" name="txtemail" placeholder="Enter email" required="">
+			<br><br>
+			<input type="password" name="txtpass" placeholder="Enter password" required="">
+			<br>
+			<br>
+            
+            <br>
+            <br>
+            <input type="submit" name="btnsubmit" value="Submit" />
+        </form>
+        {{msg}}

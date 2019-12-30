@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+	<header><h1>Welcome in FeedBack System Application</h1>
+ <hr>
+ 
+<ul><li><a href="home">Home</a></li><li><a href="about">About</a></li><li><a href="contact">Contact us</a></li><li><a href="service">Service</a></li><li><a href="gallery">Gallary</a></li></ul>
+</header>
+	<section>
+		<center>
+		<h1>Welcome in Contact us page</h1>
+		<form action="contactcode" method="post">
+			{% csrf_token %}
+			<input type="email" name="txtemail" placeholder="Enter email" required="">
+			<br><br>
+			<input type="number" name="txtmobile" placeholder="Enter mobile" required="">
+			<br>
+			<br>
+            <textarea rows="10" cols="20" name="txtmsg" placeholder="Enter message" required=""></textarea>
+            <br>
+            <br>
+            <input type="submit" name="btnsubmit" value="Submit" />
+        </form>
+        {{res}}
+        </center>
+         <a href="viewcontact">View Contact</a>
+	</section>
+	<footer></footer>
+
+</body>
+</html>

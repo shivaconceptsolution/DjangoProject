@@ -1,0 +1,8 @@
+<h1>View Contact Here</h1>
+<table border="1">
+	<tr><th>EmailID</th><th>Mobileno</th><th>Message</th></tr>
+ {% for q in res %}
+     <tr>  <td>{{ q.emailid }} </td><td> {{ q.mobile }} </td><td> {{ q.message }}</td><td><a href="Editcontact?q={{ q.id }}"> EDIT</a></td><td><a href="Deletecontact?q={{ q.id }}">DELETE</a></td></tr>
+ {% endfor %}
+
+</table>
